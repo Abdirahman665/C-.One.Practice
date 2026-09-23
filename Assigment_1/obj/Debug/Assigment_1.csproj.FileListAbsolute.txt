@@ -1,0 +1,10 @@
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\bin\Debug\Assigment_1.exe.config
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\bin\Debug\Assigment_1.exe
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\bin\Debug\Assigment_1.pdb
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\obj\Debug\Assigment_1.csproj.AssemblyReference.cache
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\obj\Debug\Assigment_1.Form1.resources
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\obj\Debug\Assigment_1.Properties.Resources.resources
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\obj\Debug\Assigment_1.csproj.GenerateResource.cache
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\obj\Debug\Assigment_1.csproj.CoreCompileInputs.cache
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\obj\Debug\Assigment_1.exe
+C:\Users\Sidow\source\repos\Assigment_1\Assigment_1\obj\Debug\Assigment_1.pdb
