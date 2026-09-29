@@ -1,26 +1,29 @@
-# Discouse chapter 2
+# chapter 2
 
-# week2 - C# Home work Assignment1
+# try
 
-# the code has try
+is where you place the statment that can cause exception
 
-try
-{
-    int num1, num2, sum;
+# catch
 
-    num1=int.Parse(FirstNumber.Text);
-    num2=int.Parse(SecondNumber.Text);
-    sum=num1+num2;
-    total.Text=sum.ToString();
-}
+is where you place statment that respond exception
 
-# in try has Arithmetic
+# numeric literal 
 
-sum=num1+num2;
+is a number that writen into a programs code
 
-# and the code has catch
+# concatenation 
 
-catch (FormatException)
-{
-    MessageBox.Show("Please enter valid numbers.");
-}
+is the appending of one string to the end of another string
+
+# var keyword 
+
+is keyword use instead of writing the full type of a variable
+
+# exception
+
+is an unexpected error that happens while a program is running
+
+# anamed constant
+
+is the name that represents a value that cannot be changed during the programs execution
