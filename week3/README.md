@@ -1,9 +1,4 @@
-import pypandoc
-
-markdown = """# Chapter 3: Making Decisions in C#
-**Source:** *Starting Out with Visual C#, Sixth Edition* — Chapter 3, “Making Decisions”
-
-This README summarizes the important concepts and examples from the presentation.
+### Week 3 ###
 
 ## Contents
 1. Decision Structures and `if`
