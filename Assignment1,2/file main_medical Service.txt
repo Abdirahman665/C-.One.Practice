@@ -1,0 +1,47 @@
+package assignment;
+
+public class main_medicalService {
+
+        static void main(String[] args) {
+
+
+            Consultation consultation =
+                    new Consultation("S001", "Consultation", 20, 5);
+
+            LaboratoryTest laboratoryTest =
+                    new LaboratoryTest("S002", "Laboratory Test", 15, 3);
+
+            Ultrasound ultrasound =
+                    new Ultrasound("S003", "Ultrasound", 30, 10);
+
+            // Storing different services in a MedicalService array
+            MedicalService[] services = {
+                    consultation,
+                    laboratoryTest,
+                    ultrasound
+            };
+
+            double totalHospitalBill = 0;
+
+            System.out.println("HOSPITAL BILLING SYSTEM");
+            System.out.println();
+
+
+            for (MedicalService service : services) {
+
+                service.displayServiceInfo();
+
+                double totalCost = service.calculateTotalCost();
+
+                System.out.printf("Total Cost: $%.2f%n%n", totalCost);
+
+                totalHospitalBill += totalCost;
+            }
+
+
+            System.out.println("------------------------------");
+            System.out.printf("Total Hospital Bill: $%.2f%n",
+                    totalHospitalBill);
+        }
+
+}

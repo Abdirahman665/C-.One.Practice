@@ -1,0 +1,109 @@
+package assignment;
+
+public class Employee {
+
+        protected String employeeId;
+        protected String name;
+        protected String department;
+        protected double basicSalary;
+
+        // Constructor
+        public Employee(String employeeId, String name, String department, double basicSalary) {
+
+            this.employeeId = employeeId;
+            this.name = name;
+            this.department = department;
+            this.basicSalary = basicSalary;
+        }
+
+        // Method to calculate salary
+        public double calculateSalary() {
+            return basicSalary;
+        }
+
+        // Method to display employee information
+        public void displayEmployeeInfo() {
+            System.out.println("Employee ID: " + employeeId);
+            System.out.println("Name: " + name);
+            System.out.println("Department: " + department);
+        }
+    }
+
+
+    // Full-Time Employee subclass
+    class FullTimeEmployee extends Employee {
+
+        private double allowance;
+
+        public FullTimeEmployee(String employeeId, String name, String department, double basicSalary, double allowance) {
+
+            super(employeeId, name, department, basicSalary);
+            this.allowance = allowance;
+        }
+
+        // Overriding calculateSalary()
+        @Override
+        public double calculateSalary() {
+            return basicSalary + allowance;
+        }
+
+        @Override
+        public void displayEmployeeInfo() {
+            super.displayEmployeeInfo();
+            System.out.println("Category: Full-Time Employee");
+        }
+    }
+
+
+    // Part-Time Employee subclass
+    class PartTimeEmployee extends Employee {
+
+        private double hoursWorked;
+        private double hourlyRate;
+
+        public PartTimeEmployee(String employeeId, String name, String department, double basicSalary, double hoursWorked, double hourlyRate) {
+
+            super(employeeId, name, department, basicSalary);
+            this.hoursWorked = hoursWorked;
+            this.hourlyRate = hourlyRate;
+        }
+
+        // Overriding calculateSalary()
+        @Override
+        public double calculateSalary() {
+            return hoursWorked * hourlyRate;
+        }
+
+        @Override
+        public void displayEmployeeInfo() {
+            super.displayEmployeeInfo();
+            System.out.println("Category: Part-Time Employee");
+        }
+    }
+
+
+    // Manager subclass
+    class Manager extends Employee {
+
+        private double bonus;
+
+        public Manager(String employeeId, String name, String department, double basicSalary, double bonus) {
+
+            super(employeeId, name, department, basicSalary);
+            this.bonus = bonus;
+        }
+
+        // Overriding calculateSalary()
+        @Override
+        public double calculateSalary() {
+            return basicSalary + bonus;
+        }
+
+        @Override
+        public void displayEmployeeInfo() {
+            super.displayEmployeeInfo();
+            System.out.println("Category: Manager");
+        }
+    }
+
+

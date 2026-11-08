@@ -1,0 +1,33 @@
+package assignment;
+
+public class main_employee {
+
+       static void main(String[] args) {
+
+            FullTimeEmployee employee1 =
+                    new FullTimeEmployee("EMP001", "Ahmed Ali", "IT", 500, 150);
+
+            PartTimeEmployee employee2 =
+                    new PartTimeEmployee("EMP002", "Fatima Hassan", "Marketing", 0, 20, 12);
+
+            Manager employee3 =
+                    new Manager("EMP003", "Mohamed Omar", "Management", 1000, 200);
+
+
+            Employee[] employees = {
+                    employee1,
+                    employee2,
+                    employee3
+            };
+
+            System.out.println("EMPLOYEE SALARY REPORT");
+
+            // Display information and calculated salary
+            for (Employee employee : employees) {
+                employee.displayEmployeeInfo();
+                System.out.printf("Monthly Salary: $%.2f%n%n",
+                        employee.calculateSalary());
+            }
+        }
+
+}
